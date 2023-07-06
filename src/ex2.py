@@ -15,6 +15,5 @@ def find_total_visits():
 def ex2():
     total = find_total_visits()
     print(f"Total visits: {total}.")
-
-
 ex2()
+
