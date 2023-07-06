@@ -3,7 +3,7 @@ from ValidationException import ValidationException
 def validate_file(file_path):
     non_integer_mileages = []
     with open(file_path, 'r') as file:
-        next(file)  # Skip the header line
+        next(file) 
         for line in file:
             car_id, mileage = line.strip().split(',')
             try:
