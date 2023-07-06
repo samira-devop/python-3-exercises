@@ -15,6 +15,7 @@ def validate_file(file_path):
     return non_integer_mileages
 
 
+
 def ex1():
     try:
         non_integer_mileages = validate_file("./files/input.txt")
