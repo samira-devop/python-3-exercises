@@ -16,6 +16,7 @@ def ex2():
     print(f"Total visits: {total}.")
 ex2()
 
+# hi
 
 
 
