@@ -25,3 +25,31 @@ def ex1():
 
 
 ex1()
+
+
+"""
+# 2nd method
+def validate_file(file_name):
+    file1 = open(file_name, 'r')
+    for count, line in enumerate(file1):
+    if count !=0:
+        line_values = line.split(',')
+    # if the second value is number -> throw exception
+        try:
+            int(line_values[1])
+        except:
+            raise validationException(f"Invalid Mileage: {line_values[1]}")
+        
+    file1.close()
+
+
+
+def ex1():
+    try:
+        validate_file("input.txt")
+    except ValidationException as ve:
+        print(ve)
+
+ex1()
+
+ """
